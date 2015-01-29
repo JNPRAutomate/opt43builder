@@ -12,6 +12,7 @@ import (
 # Juniper KBs
 - http://kb.juniper.net/InfoCenter/index?page=content&id=KB23834
 - http://kb.juniper.net/InfoCenter/index?page=content&id=KB27200
+- http://kb.juniper.net/InfoCenter/index?page=content&id=KB27327
 
 # IETF RFCs
 - https://tools.ietf.org/html/rfc3925
