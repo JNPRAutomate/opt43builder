@@ -3,6 +3,7 @@ package vendorcoder
 import (
 	"bytes"
 	"fmt"
+	"strings"
 	"unicode/utf8"
 )
 
@@ -74,7 +75,7 @@ func (vo *VendorSubOption) Hex(hex bool, delim string) string {
 		}
 		buffer.WriteString(fmt.Sprintf("%s%s", finalString, delim))
 	}
-	return buffer.String()
+	return strings.Replace(fmt.Sprintf("%+q", buffer.String()), "\"", "", -1)
 	//return fmt.Sprintf("% x%s", finalBytes, delim)
 }
 
@@ -95,7 +96,7 @@ func (vo *VendorSubOption) ByteString(delim string) string {
 		}
 		buffer.WriteString(fmt.Sprintf("%s%s", finalString, delim))
 	}
-	return buffer.String()
+	return strings.Replace(fmt.Sprintf("%+q", buffer.String()), "\"", "", -1)
 }
 
 //String returns the string representation of the VendorSubOption
