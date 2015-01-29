@@ -11,6 +11,7 @@ Usage
 -delim=",": Specify the delimiter to seperate the options. Default is ","
 -options="": DHCP Option format code:value[,code:value,...]
 
+
 /opt43builder -options="0:junos.tgz,1:ex4300-01.cfg,3:http"
 Decimal (Spaces): 00 09 106 117 110 111 115 46 116 103 122 01 13 101 120 52 51 48 48 45 48 49 46 99 102 103 03 04 104 116 116 112
 Decimal: 00091061171101111154611610312201131011205251484845484946991021030304104116116112
@@ -20,6 +21,25 @@ Hex Full(Spaces): 0x0 0x9 0x6a 0x75 0x6e 0x6f 0x73 0x2e 0x74 0x67 0x7a 0x1 0xd 0
 Hex Full: 0x00x90x6a0x750x6e0x6f0x730x2e0x740x670x7a0x10xd0x650x780x340x330x300x300x2d0x300x310x2e0x630x660x670x30x40x680x740x740x70
 
 ```
+
+ZTP Option 43 Sub-Options
+-------------------------
+- __Sub-Option 0__:
+	- Name: image-file-name
+	- Input:
+		- text (file name)
+			- eg "junos.tgz"
+- __Sub-Option 1__:
+	- _Name_: config-file-name
+	- _Input_:
+		- text (file name)
+			- eg "ex4300-01.cfg"
+- __Sub-Option 3__:
+	- _Name_: transfer-mode
+	- _Input_:
+		- tftp 
+		- ftp
+		- http
 
 Downloads
 ---------
