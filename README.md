@@ -11,8 +11,7 @@ Usage
 -delim=",": Specify the delimiter to seperate the options. Default is ","
 -options="": DHCP Option format code:value[,code:value,...]
 
-
-/opt43builder -options="0:junos.tgz,1:ex4300-01.cfg,3:http"
+./opt43builder -options="0:junos.tgz,1:ex4300-01.cfg,3:http"
 Decimal (Spaces): 00 09 106 117 110 111 115 46 116 103 122 01 13 101 120 52 51 48 48 45 48 49 46 99 102 103 03 04 104 116 116 112
 Decimal: 00091061171101111154611610312201131011205251484845484946991021030304104116116112
 Hex (Spaces): 00 09 6a 75 6e 6f 73 2e 74 67 7a 01 0d 65 78 34 33 30 30 2d 30 31 2e 63 66 67 03 04 68 74 74 70
